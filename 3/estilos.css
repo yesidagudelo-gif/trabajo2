@@ -1,0 +1,177 @@
+/* GLOBALES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+    background-color: #ffebee; 
+    padding: 20px;
+}
+
+.principal {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05); 
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.encabezado {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px; 
+    margin-left: 20px;
+}
+
+.borde {
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #ffebee;
+}
+
+.caja-texto {
+    width: 100%;
+}
+
+p {
+    font-size: 14px; 
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #b71c1c;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.caja-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* FLOAT */
+.estilo-float .encabezado nav {
+    float: right;
+}
+
+.estilo-float .fila-layout {
+    display: flex;
+    gap: 10px;
+}
+
+.estilo-float .columna-izq {
+    flex: 0 0 26%;
+}
+
+.estilo-float .columna-centro {
+    flex: 0 0 46%;
+}
+
+.estilo-float .columna-der {
+    flex: 0 0 26%;
+}
+
+.estilo-float .caja-imagen {
+    width: 100%;
+    height: 200px;
+    display: table;
+    margin-bottom: 15px;
+}
+
+.estilo-float .caja-imagen span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 96px; 
+    color: #ccc;
+    font-weight: lighter;
+}
+
+.estilo-float .caja-video {
+    padding: 5px;
+}
+
+.estilo-float .caja-video video {
+    gap: 10px;
+    width: 100px;
+    display: block;
+    min-height: 300px;
+    background-color: #eee;
+}
+
+/* FLEX */
+.estilo-flex .encabezado {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.estilo-flex .fila-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.estilo-flex .columna-izq, 
+.estilo-flex .columna-der {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.estilo-flex .columna-centro {
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.estilo-flex .caja-imagen {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estilo-flex .caja-imagen span {
+    font-size: 96px; 
+    color: #ccc;
+    font-weight: lighter;
+}
+
+.estilo-flex .columna-izq .caja-texto,
+.estilo-flex .columna-der .caja-texto {
+    flex-grow: 1;
+}
+
+.estilo-flex .caja-video {
+    margin-top: 100px; 
+    padding: 5px;
+}
+
+.estilo-flex .caja-video video {
+    width: 100%;
+    display: block;
+    min-height: 300px;
+    background-color: #eee;
+}
